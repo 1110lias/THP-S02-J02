@@ -1,5 +1,5 @@
 puts ""
-puts "$ ruby exo_09.rb"
+puts "$ ruby exo_10.rb"
 puts "================================================================="
 puts "Entrer votre année de naissance"
 print "> " 
