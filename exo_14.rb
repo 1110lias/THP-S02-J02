@@ -14,6 +14,6 @@ puts "(Ici les emails contenant un nombre impair ne sont pas affichées)"
 
 # filtered_array = email_arr.reject { |email| (email[/\d+/]).to_i % 2 == 1 }    # Methode Odd / Even n1
 filtered_array = email_arr.reject { |email| (email[/\d+/]).to_i.odd?}           # Methode Odd / Even n2
-puts filtered_array
+print filtered_array
 puts "================================================================="
 puts ""
