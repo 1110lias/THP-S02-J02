@@ -9,7 +9,8 @@ age_now = year_now - user_bdy
 age_pair = true
 puts ""
 u=1
-puts "en \e[31m#{user_bdy}\e[0m tu es né.e et aujourd'hui tu as #{age_now}"
+print "En \e[31m#{user_bdy}\e[0m tu es né.e et aujourd'hui tu as #{age_now}. "
+age_loop = age_now-1
     if age_now % 2 == 1
         puts "Votre age est impair"
         age_pair = false
@@ -17,7 +18,7 @@ puts "en \e[31m#{user_bdy}\e[0m tu es né.e et aujourd'hui tu as #{age_now}"
         puts "Votre age est pair"
     end
 user_bdy += 1
-    until user_bdy == year_now
+    age_loop.times do |i|    # autre methode "until user_bdy == year_now"
         age_diff = age_now - u
         if age_diff == 1
             puts "L'année dernière, tu avais \e[35m#{u}\e[0m ans."
@@ -36,6 +37,6 @@ user_bdy += 1
         user_bdy += 1
         u += 1 
     end
-puts "A ce jour en \e[31m#{user_bdy}\e[0m tu as ou tu vas avoir \e[35m#{u}\e[0m ans"
+puts "A ce jour en \e[31m#{user_bdy}\e[0m tu as, ou vas avoir, \e[35m#{u}\e[0m ans"
 puts "================================================================="
 puts ""
