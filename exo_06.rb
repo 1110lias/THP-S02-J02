@@ -5,8 +5,8 @@ puts "Ecrit un chiffre \e[31mexactement\e[0m entre \e[36m0\e[0m et \e[36m50\e[0m
 print "> " 
 nb_choisi = gets.chomp.to_i
 sleep 0.3
-until nb_choisi >=0 && nb_choisi <=50
-    if nb_choisi < 0 || nb_choisi >50
+until nb_choisi >0 && nb_choisi <=50
+    if nb_choisi <= 0 || nb_choisi >50
         puts "Tu veux jouer au con?"
         sleep 2
         puts "Alors on va compter jusqu'à 100-1... de plus en plus doucement... "
